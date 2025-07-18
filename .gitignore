@@ -1,0 +1,29 @@
+# Cabal build artifacts
+dist-newstyle/
+
+# Haskell compiler (GHC) generated files
+*.o         # Object files
+*.hi        # Haskell interface files
+*.dyn_o     # Dynamic object files
+*.dyn_hi    # Dynamic Haskell interface files
+*.hie       # HIE files (for IDEs and tools)
+*.prof      # Profiling data
+*.tix       # Test coverage data
+*.eventlog  # Event log files
+*-tmp/      # Temporary directories created during compilation
+.ghc.environment.* # GHC environment files
+
+# Cabal-specific configuration files (generated locally)
+cabal.project.local
+cabal.project.freeze
+
+# Editor/IDE specific files (common ones)
+.vscode/    # VS Code settings
+.idea/      # IntelliJ IDEA/Haskell Language Server settings
+*.swp       # Vim swap files
+*~          # Emacs backup files
+.#* # Emacs auto-save files
+
+# Operating System generated files
+.DS_Store   # macOS
+Thumbs.db   # Windows
