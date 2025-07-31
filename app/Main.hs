@@ -2,6 +2,12 @@
 module Main where
 
 import Relude
+import Parser
 
 main :: IO ()
-main = putStrLn "Hello, Haskell!"
+main = do
+    r <- loadReplacements "palabrotas.txt" "sustitutos.txt"
+    textoBS <- readFileBS "texto.txt"
+    let texto = decodeUtf8 textoBS 
+    let result = applyReplacements r texto
+    putTextLn result
