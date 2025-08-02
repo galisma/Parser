@@ -31,3 +31,11 @@ loadReplacements pathPalabrotas pathSustitutos = do
     let sustitutos = words substitutosText
     
     pure Replacements { slurs = palabrotas, substitutes = sustitutos}
+
+    
+    {- 
+    TODO: 
+    - Usar un numero aleatorio
+    - Implementar busqueda de arbol
+    - Cambiar lista por un set
+    -}
