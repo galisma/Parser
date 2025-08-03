@@ -1,3 +1,4 @@
+-- main
 {-# LANGUAGE NoImplicitPrelude #-}
 module Main where
 
@@ -11,3 +12,5 @@ main = do
     let texto = decodeUtf8 textoBS 
     let result = applyReplacements r texto
     putTextLn result
+    num <- generateRandomNumber 100
+    putStrLn $ "Número aleatorio: " <> show num

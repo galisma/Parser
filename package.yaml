@@ -9,6 +9,7 @@ dependencies:
   - bytestring
   - relude
   - base
+  - random
 
 library:
   source-dirs: ./app

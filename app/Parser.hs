@@ -1,7 +1,9 @@
+-- parser.hs
 {-# LANGUAGE NoImplicitPrelude #-}
 
 module Parser where
 import Relude
+import System.Random.Stateful
 
 data Replacements = Replacements {slurs :: [Text], substitutes :: [Text]}
 
@@ -32,10 +34,14 @@ loadReplacements pathPalabrotas pathSustitutos = do
     
     pure Replacements { slurs = palabrotas, substitutes = sustitutos}
 
-    
+generateRandomNumber :: Int -> IO Int
+generateRandomNumber n = randomRIO (1, n)
+
+
+
     {- 
     TODO: 
-    - Usar un numero aleatorio
+    - Usar un numero aleatorio (HECHO)
     - Implementar busqueda de arbol
     - Cambiar lista por un set
     -}

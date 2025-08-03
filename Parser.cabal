@@ -22,6 +22,7 @@ library
   build-depends:
       base
     , bytestring
+    , random
     , relude
   default-language: Haskell2010
 
@@ -36,5 +37,6 @@ executable hello
   build-depends:
       base
     , bytestring
+    , random
     , relude
   default-language: Haskell2010
